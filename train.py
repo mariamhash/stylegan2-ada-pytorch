@@ -269,9 +269,9 @@ def setup_training_loop_kwargs(
         desc += f'-{augpipe}'
 
     augpipe_specs = {
-        'blit':   dict(xflip=1, rotate90=1, xint=1),
-        'geom':   dict(scale=1, rotate=1, aniso=1, xfrac=1),
-        'color':  dict(brightness=1, contrast=1, lumaflip=1, hue=1, saturation=1),
+        'blit':   dict(xflip=1, rotate90=0, xint=1),
+        'geom':   dict(scale=1, rotate=0, aniso=0, xfrac=1),
+        'color':  dict(brightness=1, contrast=1, lumaflip=0, hue=0, saturation=0),
         'filter': dict(imgfilter=1),
         'noise':  dict(noise=1),
         'cutout': dict(cutout=1),
